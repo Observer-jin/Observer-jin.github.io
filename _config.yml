@@ -24,67 +24,67 @@ permalink_defaults:
 
 
 
-#Custom Setting Start
+# #Custom Setting Start
 
-# Site settings
-# 网站综合内容设置：
-SEOTitle: AirCloud的博客 | AirCloud's Blog
-email: onlythen@yeah.net
+# # Site settings
+# # 网站综合内容设置：
+# SEOTitle: AirCloud的博客 | AirCloud's Blog
+# email: onlythen@yeah.net
 
-# SNS settings
-# 一些社交平台地址，支持以下几种：
-weibo_username:     3286578617
-zhihu_username:     ai-er-lan-xue-da
-github_username:    AirCloud
-twitter_username:   iconie_alloy
-facebook_username:  xiaotao.nie.5
-linkedin_username:  小涛-聂-80964aba
-# Build settings
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# # SNS settings
+# # 一些社交平台地址，支持以下几种：
+# weibo_username:     3286578617
+# zhihu_username:     ai-er-lan-xue-da
+# github_username:    AirCloud
+# twitter_username:   iconie_alloy
+# facebook_username:  xiaotao.nie.5
+# linkedin_username:  小涛-聂-80964aba
+# # Build settings
+# anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-sidebar-avatar: img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+# sidebar-avatar: img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
-# Friends
-# 友情链接
-friends: [
-    {
-        title: "10000H",
-        href: "https://www.10000h.top"
-    },{
-        title: "Xiaotao's Page",
-        href: "https://niexiaotao.com"
-    },{
-        title: "It helps SEO",
-        href: "#"
-    }
-]
+# # Friends
+# # 友情链接
+# friends: [
+#     {
+#         title: "10000H",
+#         href: "https://www.10000h.top"
+#     },{
+#         title: "Xiaotao's Page",
+#         href: "https://niexiaotao.com"
+#     },{
+#         title: "It helps SEO",
+#         href: "#"
+#     }
+# ]
 
-#comment:
-#  type: gitment
-#  id: your-id-created-by-https://github.com/settings/applications/new
-#  secret: your-secret-created-by-https://github.com/settings/applications/new
-#  owner: aircloud
-#  repo: hexo-aircloud-blog
+# #comment:
+# #  type: gitment
+# #  id: your-id-created-by-https://github.com/settings/applications/new
+# #  secret: your-secret-created-by-https://github.com/settings/applications/new
+# #  owner: aircloud
+# #  repo: hexo-aircloud-blog
 
-comment:
-   type: disqus
-   script: 'https://airclouds-blog.disqus.com/embed.js'
+# comment:
+#    type: disqus
+#    script: 'https://airclouds-blog.disqus.com/embed.js'
 
-donate:
-  img: img/donate.jpg
-  content: 感谢鼓励
+# donate:
+#   img: img/donate.jpg
+#   content: 感谢鼓励
 
-# The following content is not recommended to modify
-# 搜索数据文件路径设置，不建议改动：
-search:
-  path: search.json
-  field: post
+# # The following content is not recommended to modify
+# # 搜索数据文件路径设置，不建议改动：
+# search:
+#   path: search.json
+#   field: post
 
-# 文章样式(是否首行缩进)：
-post_style:
-  indent: default
+# # 文章样式(是否首行缩进)：
+# post_style:
+#   indent: default
 
-# Custom Setting End
+# # Custom Setting End
 
 
 
@@ -111,7 +111,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -149,7 +149,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: aircloud
+theme: tranquilpeak
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
