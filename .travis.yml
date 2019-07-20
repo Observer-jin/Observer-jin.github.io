@@ -16,7 +16,7 @@ before_install:
 - eval $(ssh-agent)
 - ssh-add ~/.ssh/id_rsa
 - cp .travis/ssh_config ~/.ssh/config
-- git config --global user.name "guichongsui"
+- git config --global user.name "Observer-jin"
 - git config --global user.email guichongsui@163.com
 install:
 - npm install
