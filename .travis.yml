@@ -5,8 +5,11 @@ branches:
   only:
   - source
 before_install:
-- openssl aes-256-cbc -K $encrypted_c4acb3b301e0_key -iv $encrypted_c4acb3b301e0_iv
-  -in .travis/id_rsa_blog.enc -out .travis/id_rsa_blog -d
+# - openssl aes-256-cbc -K $encrypted_c4acb3b301e0_key -iv $encrypted_c4acb3b301e0_iv
+  # -in .travis/id_rsa_blog.enc -out .travis/id_rsa_blog -d
+- openssl aes-256-cbc -K $encrypted_c4acb3b301e0_key -iv $encrypted_c4acb3b301e0_iv 
+  -in .travis/id_rsa_blog.enc -out ~/.ssh/id_rsa -d
+
 - export TZ='Asia/Shanghai'
 - npm install -g hexo
 - npm install -g hexo-cli
