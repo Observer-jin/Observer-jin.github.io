@@ -1,30 +1,24 @@
 language: node_js
 node_js:
-- "10"  # nodejs的版本
+- '10'
 branches:
   only:
-  - source  # 设置自动化部署的分支
+  - source
 before_install:
-- export TZ='Asia/Shanghai'  # 设置时区
+- openssl aes-256-cbc -K $encrypted_c4acb3b301e0_key -iv $encrypted_c4acb3b301e0_iv
+  -in .travis/id_rsa_blog.enc -out .travis/id_rsa_blog -d
+- export TZ='Asia/Shanghai'
 - npm install -g hexo
 - npm install -g hexo-cli
-# 将xxxxxxxxxxx替换上面生成的内容
-# 这里面的文件路径可根据自己的情况进行修改
-# 解密id_rsa_blog.enc 输出到.ssh/文件夹下，命名为id_rsa
-- openssl aes-256-cbc -K $encrypted_9f5ad7429744_key -iv $encrypted_9f5ad7429744_iv -in .travis/id_rsa_blog.enc -out ~/.ssh/id_rsa -d
-# 设置id_rsa文件权限
+- openssl aes-256-cbc -K $encrypted_9f5ad7429744_key -iv $encrypted_9f5ad7429744_iv
+  -in .travis/id_rsa_blog.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
-# 添加ssh密钥
 - eval $(ssh-agent)
 - ssh-add ~/.ssh/id_rsa
-# 添加ssh配置文件
 - cp .travis/ssh_config ~/.ssh/config
-# 设置github账户信息
-- git config --global user.name "guichongsui" #设置github用户名
-- git config --global user.email guichongsui@163.com #设置github用户邮箱
-# 安装依赖组件
+- git config --global user.name "guichongsui"
+- git config --global user.email guichongsui@163.com
 install:
 - npm install
-# 执行的命令
 script:
 - hexo clean && hexo g -d
