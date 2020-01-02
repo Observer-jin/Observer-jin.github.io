@@ -48,8 +48,6 @@ live2d:
 
 
 
-
-
 # Directory
 source_dir: source   #资源文件夹，这个文件夹用来存放内容。默认值：source
 public_dir: public   #公共文件夹，这个文件夹用于存放生成的站点文件。默认值：public
@@ -114,3 +112,7 @@ deploy:
   type: git
   repo: git@github.com:Observer-jin/Observer-jin.github.io.git #github仓库地址
   branch: master # github分支
+
+
+
+
