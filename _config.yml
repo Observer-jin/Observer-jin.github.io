@@ -98,4 +98,4 @@ theme: tranquilpeak
 deploy:
   type: git
   repo: git@github.com:Observer-jin/Observer-jin.github.io.git #github仓库地址
-  branch: source # github分支
+  branch: master # github分支
