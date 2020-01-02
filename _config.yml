@@ -11,7 +11,7 @@ keywords:
 author: Jin zh  #您的名字
 language: zh-cn #网站使用的语言 简体中文 zh-Hans
 timezone:      #网站时区。Hexo 默认使用您电脑的时区
-avatar: 
+avatar:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -19,11 +19,6 @@ url: http://yoursite.com    #网址
 root: /           #网站根目录
 permalink: :year/:month/:day/:title/    #| 文章的 [永久链接](https://hexo.io/zh-cn/docs/permalinks.html) 格式 | `:year/:month/:day/:title/` |
 permalink_defaults:     #永久链接中各部分的默认值 
-
-
-
-
-
 
 
 # #Custom Setting Start
