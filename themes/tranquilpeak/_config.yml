@@ -56,11 +56,15 @@ sidebar:
             title: global.about
             url: /#about
             icon: fa fa-question
-    author_links:
         github:
             title: global.github
             url: https://github.com/
             icon: fab fa-github
+        mail:
+            title: global.mail
+            url: mailto
+            icon: fa fa-envelope
+    author_links:
         stack_overflow:
             title: global.stack_overflow
             url: http://stackoverflow.com/users
@@ -81,15 +85,11 @@ sidebar:
             title: global.linkedin
             url: https://www.linkedin.com/profile/
             icon: fab fa-linkedin
-        mail:
-            title: global.mail
-            url: mailto
-            icon: fa fa-envelope
-    rss:
-        rss:
-            title: global.rss
-            url: /atom.xml
-            icon: fa fa-rss
+#    rss:
+#        rss:
+#            title: global.rss
+#            url: /atom.xml
+#            icon: fa fa-rss
 
 
 # --------------------
@@ -117,7 +117,7 @@ header:
 
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
-    email:
+    email: guichongsui@163.com
     location:
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production)
