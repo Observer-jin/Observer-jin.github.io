@@ -17,6 +17,7 @@ before_install:
 #主题也需要install
 - cd themes/tranquilpeak
 - npm install && npm run prod
+- cd ~
 
 - chmod 600 ~/.ssh/id_rsa
 - eval $(ssh-agent)
