@@ -17,12 +17,11 @@ before_install:
 #主题也需要install
 - cd themes/tranquilpeak
 - npm install && npm run prod
-- cd ~
 
 - chmod 600 ~/.ssh/id_rsa
 - eval $(ssh-agent)
 - ssh-add ~/.ssh/id_rsa
-- cp .travis/ssh_config ~/.ssh/config
+- cp ～/.travis/ssh_config ~/.ssh/config
 - git config --global user.name "Observer-jin"
 - git config --global user.email guichongsui@163.com
 install:
