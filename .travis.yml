@@ -20,7 +20,8 @@ before_install:
 - git config --global user.name "Observer-jin"
 - git config --global user.email guichongsui@163.com
 
-- cd ~/themes/tranquilpeak
+#主题也需要install
+- cd themes/tranquilpeak
 - npm install && npm run prod
 
 install:
