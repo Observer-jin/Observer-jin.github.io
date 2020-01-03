@@ -19,6 +19,10 @@ before_install:
 - cp .travis/ssh_config ~/.ssh/config
 - git config --global user.name "Observer-jin"
 - git config --global user.email guichongsui@163.com
+
+- cd ~/themes/tranquilpeak
+- npm install && npm run prod
+
 install:
 - npm install
 script:
